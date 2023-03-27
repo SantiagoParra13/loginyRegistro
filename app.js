@@ -39,13 +39,11 @@ const connection = require ('./database/db');
 const e = require("express");
 
       app.get("/", (req, res) => {
-        res.render("index",{msg:"Mensaje desde Node"});
+        res.render("login",);
       });
 
 
-      app.get("/login", (req, res) => {
-        res.render("login");
-      });
+  
 
       app.get("/register", (req, res) => {
         res.render("register",);
